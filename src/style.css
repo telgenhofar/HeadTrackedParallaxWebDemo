@@ -1,14 +1,68 @@
 body {
   margin: 0;
   overflow: hidden;
+  font-family: system-ui, sans-serif;
 }
 
 canvas {
   display: block;
 }
 
-#calibration {
-  position: absolute;
-  top: 16px;
-  left: 16px;
+#toolbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 48px 48px;
+}
+
+#toolbar button {
+  width: 40px;
+  height: 40px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transform: translateY(-80px);
+  transition: transform 0.2s ease;
+}
+
+#toolbar:hover button {
+  transform: translateY(0);
+}
+
+#calibration-modal {
+  padding: 24px;
+  border: none;
+  border-radius: 12px;
+  max-width: 320px;
+}
+
+#calibration-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#calibration-modal h2 {
+  margin-top: 0;
+}
+
+#calibration-modal .row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#calibration-modal #diagonal {
+  flex: 1;
+}
+
+#modal-close {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
 }

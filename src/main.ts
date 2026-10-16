@@ -3,6 +3,8 @@ import * as THREE from "three/webgpu";
 import { renderer } from "./renderer";
 import { scene, resizeScene } from "./scene";
 import { onCalibrationChange } from "./calibrationInput";
+import "./calibrationModal";
+import "./toolbar";
 
 const VIEWING_DISTANCE = 0.6;
 
