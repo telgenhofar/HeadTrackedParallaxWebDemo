@@ -6,3 +6,9 @@ body {
 canvas {
   display: block;
 }
+
+#calibration {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
