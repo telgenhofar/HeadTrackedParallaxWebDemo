@@ -54,13 +54,33 @@ canvas {
 #calibration-modal .row {
   display: flex;
   gap: 8px;
+}
+
+#calibration-modal div.row {
   margin-bottom: 16px;
 }
 
-#calibration-modal #diagonal {
+#calibration-modal .row input {
   flex: 1;
 }
 
+#calibration-modal .field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+#calibrate-height {
+  margin-bottom: 8px;
+}
+
+#calibration-modal .note {
+  font-size: 13px;
+  color: #666;
+}
+
+#calibrate-height,
 #modal-close {
   width: 100%;
   padding: 8px;

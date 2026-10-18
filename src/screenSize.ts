@@ -1,4 +1,4 @@
-const METERS_PER_UNIT = { in: 0.0254, cm: 0.01 };
+export const METERS_PER_UNIT = { in: 0.0254, cm: 0.01 };
 
 export type Unit = keyof typeof METERS_PER_UNIT;
 

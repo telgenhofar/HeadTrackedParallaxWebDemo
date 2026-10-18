@@ -20,6 +20,24 @@
           <option value="cm">cm</option>
         </select>
       </div>
+      <label class="field">
+        Webcam horizontal field of view (degrees)
+        <input id="webcam-fov" type="number" min="30" max="120" step="1" value="60">
+      </label>
+      <p class="note">Assumes your webcam sits centered above the screen. Off-center or secondary-monitor cameras will skew the effect.</p>
+      <label class="field">
+        Viewing distance
+        <span class="row">
+          <input id="viewing-distance" type="number" min="1" step="1" value="24">
+          <select id="distance-unit">
+            <option value="in">in</option>
+            <option value="cm">cm</option>
+          </select>
+        </span>
+      </label>
+      <button id="calibrate-height">Calibrate height</button>
+      <p class="note">Sit centered in front of your webcam at your normal height, then press Calibrate height to set that as the view straight on.</p>
+      <p id="tracking-status" class="note"></p>
       <button id="modal-close">Continue</button>
     </dialog>
     <script type="module" src="/src/main.ts"></script>

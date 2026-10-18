@@ -7,5 +7,9 @@ export function openCalibrationModal() {
   }
 }
 
+export function onFirstModalClose(callback: () => void) {
+  modal.addEventListener("close", callback, { once: true });
+}
+
 closeButton.addEventListener("click", () => modal.close());
 openCalibrationModal();
